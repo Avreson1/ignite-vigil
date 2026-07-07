@@ -26,14 +26,14 @@ export default function App() {
       ...formData, 
       seat_number: newSeat, 
       theme: "KATHIZO", 
-      venue: "Hall of Tyrannus, El-Rehoboth Global Missions HQ, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos", 
+      venue: "Hall of Tyrannus", 
       time: "9:00 PM" 
     };
 
     try {
       // Production Endpoints for Dashboard Collection and n8n Automation Engine
-      const formspreeURL = "https://formspree.io/f/your_formspree_id"; 
-      const n8nURL = "https://your-instance.n8n.cloud/webhook/ignite-registration"; 
+      const formspreeURL = "https://formspree.io/f/mpqokoqz"; 
+      const n8nURL = "https://n8n-service-jk9f.onrender.com/webhook/ignite-kathizo-registration"; 
 
       await Promise.all([
         fetch(formspreeURL, { 
@@ -85,8 +85,8 @@ export default function App() {
 
             <div>
               <p className="text-gray-500 text-[9px] uppercase font-bold tracking-widest">Venue</p>
-              <p className="font-semibold text-sm">Thrive House</p>
-              <p className="text-xs text-gray-400">Opposite St. Murumba's College, Jos</p>
+              <p className="font-semibold text-sm">Hall of Tyrannus, El-Rehoboth Global Missions HQ, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</p>
+              <p className="text-xs text-gray-400">, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</p>
             </div>
 
             <div className="space-y-3 pt-2 print:hidden">
@@ -99,7 +99,7 @@ export default function App() {
               
               <button 
                 onClick={() => {
-                  const text = encodeURIComponent(`I'm attending IGNITE: KATHIZO! 🔥 Seat: ${seatNumber}. See you at Thrive House, 9PM!`);
+                  const text = encodeURIComponent(`I'm attending IGNITE: KATHIZO! 🔥 Seat: ${seatNumber}. See you at Hall of Tyrannus, 9PM!`);
                   window.open(`https://wa.me/?text=${text}`, '_blank');
                 }}
                 className="w-full py-4 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/30 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition"
