@@ -26,7 +26,7 @@ export default function App() {
       ...formData, 
       seat_number: newSeat, 
       theme: "KATHIZO", 
-      venue: "Thrive House", 
+      venue: "Hall of Tyrannus, El-Rehoboth Global Missions HQ, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover", 
       time: "9:00 PM" 
     };
 
@@ -170,7 +170,7 @@ export default function App() {
             <div className="space-y-4 pt-6 border-t border-white/5">
               <label className="text-[10px] font-bold text-orange-500 uppercase tracking-widest flex items-center gap-2"><ShieldAlert size={12}/> Logistics & Safety</label>
               <select required className="w-full bg-neutral-800 border border-white/10 p-4 rounded-xl outline-none focus:border-orange-500 text-sm appearance-none" onChange={e => setFormData({...formData, neighborhood: e.target.value})}>
-                <option value="">Select Neighborhood (for drop-offs)</option>
+                <option value="">Select Neighborhood </option>
                 <optgroup label="Jos North">
                   <option value="Tudun Wada">Tudun Wada</option>
                   <option value="Farin Gada">Farin Gada</option>
