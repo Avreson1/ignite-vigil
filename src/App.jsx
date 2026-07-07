@@ -85,8 +85,8 @@ export default function App() {
 
             <div>
               <p className="text-gray-500 text-[9px] uppercase font-bold tracking-widest">Venue</p>
-              <p className="font-semibold text-sm">Hall of Tyrannus, El-Rehoboth Global Missions HQ, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</p>
-              <p className="text-xs text-gray-400">, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</p>
+              <p className="font-semibold text-sm"> Hall of Tyrannus, El-Rehoboth Global Missions HQ</p>
+              <p className="text-xs text-gray-400"> No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</p>
             </div>
 
             <div className="space-y-3 pt-2 print:hidden">
@@ -132,7 +132,7 @@ export default function App() {
         <Flame className="w-16 h-16 text-orange-500 mb-4 animate-pulse" />
         <h1 className="text-6xl md:text-9xl font-black tracking-tighter mb-4 italic uppercase leading-none">Kathizo</h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 mb-8 text-gray-400 text-sm font-medium">
-          <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange-500 shrink-0"/> Hall of Tyrannus, El-Rehoboth Global Missions HQ, No. 5, Nunku Road, Off Yakubu Gowon Way, Secreteriat Flyover, Jos</span>
+          <span className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange-500 shrink-0"/> Hall of Tyrannus </span>
           <span className="flex items-center gap-2"><Clock className="w-4 h-4 text-orange-500 shrink-0"/> 9:00 PM</span>
         </div>
         <button 
